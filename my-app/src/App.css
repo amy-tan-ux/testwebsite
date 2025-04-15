@@ -1,0 +1,64 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif; /* Elegant wedding font */
+  text-align: center;
+}
+
+.parallax {
+  background-image: url("https://source.unsplash.com/1600x900/?wedding,couple"); /* Replace with your own image */
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 60%;
+}
+
+.wedding-title {
+  font-size: 2.5em;
+  color: #b76e79; /* Rose gold */
+}
+
+.subtext {
+  font-size: 1.2em;
+  color: #555;
+  font-style: italic;
+}
+
+.input-box {
+  padding: 10px;
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #b76e79; /* Rose gold */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
