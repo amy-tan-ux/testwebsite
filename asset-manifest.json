@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/amy-tan-ux/testwebsite.git/static/css/main.f96d7722.css",
+    "main.js": "/amy-tan-ux/testwebsite.git/static/js/main.319b125a.js",
+    "static/js/453.ed3810f9.chunk.js": "/amy-tan-ux/testwebsite.git/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/amy-tan-ux/testwebsite.git/index.html",
+    "main.f96d7722.css.map": "/amy-tan-ux/testwebsite.git/static/css/main.f96d7722.css.map",
+    "main.319b125a.js.map": "/amy-tan-ux/testwebsite.git/static/js/main.319b125a.js.map",
+    "453.ed3810f9.chunk.js.map": "/amy-tan-ux/testwebsite.git/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f96d7722.css",
+    "static/js/main.319b125a.js"
+  ]
+}
