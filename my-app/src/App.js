@@ -24,12 +24,13 @@ function App() {
 
     console.log("ai response:" + response)
     console.log(response)
+    console.log(process.env.REACT_APP_TEST_ENV_VAR)
 
   return (
     <div className="parallax">
       <div className="container">
         <h1 className="wedding-title">Wedding RSVP</h1>
-        <h1>Puter.js Response:</h1>
+        <h1>Puter.js Response: {process.env.REACT_APP_TEST_ENV_VAR} </h1>
       <p>{ response || "Loading..."}</p>
         <p className="subtext">Join us for our special day!</p>
         <form onSubmit={handleSubmit}>
