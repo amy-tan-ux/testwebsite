@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css"; // Ensure this file exists for styling
 
 function App() {
@@ -10,10 +10,27 @@ function App() {
     setShowForm(true);
   };
 
+  const [response, setResponse] = useState("");
+  
+  useEffect(() => {
+      if (window.puter) {
+        window.puter.ai.chat("Tell me a fun fact!")
+          .then((res) => setResponse(res.message.content))
+          .catch((err) => console.error("Error:", err));
+      } else {
+        console.error("Puter.js is not loaded");
+      }
+    }, []);
+
+    console.log("ai response:" + response)
+    console.log(response)
+
   return (
     <div className="parallax">
       <div className="container">
         <h1 className="wedding-title">Wedding RSVP</h1>
+        <h1>Puter.js Response:</h1>
+      <p>{ response || "Loading..."}</p>
         <p className="subtext">Join us for our special day!</p>
         <form onSubmit={handleSubmit}>
           <input
